@@ -1,0 +1,13 @@
+prefix=/home/kyle/software/ffmpeg/packages/rtmpdump/librtmp-git-6155179b-win32
+exec_prefix=${prefix}
+libdir=/home/kyle/software/ffmpeg/packages/rtmpdump/librtmp-git-6155179b-win32/lib
+incdir=${prefix}/include
+
+Name: librtmp
+Description: RTMP implementation
+Version: v2.3
+Requires: 
+URL: http://rtmpdump.mplayerhq.hu
+Libs: -L${libdir} -lrtmp -lz
+Libs.private: -lws2_32 -lwinmm -lgdi32
+Cflags: -I${incdir}
